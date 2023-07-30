@@ -1,0 +1,67 @@
+header{
+    position: absolute;
+    width: 100%; /*ヘッダーの横幅を指定する*/
+    height: 70px;/*高さ*/
+    background-color: rgb(18, 18, 18); /* ヘッダーの背景色を指定する */
+    top: 0;/*基準点*/
+    left: 0;/*基準点*/
+    display: flex; /* 中の要素を横並びにする */  
+    align-items: center; /* 中の要素を上下中央に並べる */
+}
+.a{
+    color: aliceblue;
+}
+a:visited{
+    color: rgb(200, 200, 200);
+}
+.menu{
+    color: white;
+}
+h1{
+    margin-right: auto;
+    padding-left: 30px;
+    color: whitesmoke;
+}
+.menu li{
+    display: inline-block;
+    padding: 15px;
+    font-size: 24px;
+    list-style: none;/* リストの・を消す*/
+}
+.Gallery{
+    position: absolute;
+    display: flex;
+    height: auto;
+    top: 70px;
+    left: 0px;
+    width: 100%;
+    background-color: rgb(220,220,220);
+    overflow: hidden;
+    flex-direction: column;
+}
+.photo img{
+    width: 98%;
+    height: auto;
+    display: flex;
+    margin: auto;
+    margin-top: 50px;
+}
+.photo6{
+    margin-bottom: 50px;
+}
+footer{
+    height: 40px;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    left: 0;
+    background-color: rgb(18, 18, 18);
+    z-index: 99;
+    text-align: center;
+}
+.copy{
+    color: rgb(200, 200, 200);
+    font-size: 24px;
+    margin-top: 12px;
+}

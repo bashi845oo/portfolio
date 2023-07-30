@@ -1,0 +1,221 @@
+/*nav->リンク的なもの*/
+/*ul->順序なし箇条書き的なもの*/
+header{
+    position: fixed;/*固定*/
+    width: 100%; /*ヘッダーの横幅を指定する*/
+    height: 70px;/*高さ*/
+    background-color: rgb(18, 18, 18); /* ヘッダーの背景色を指定する */
+    top: 0;/*基準点*/
+    left: 0;/*基準点*/
+    display: flex; /* 中の要素を横並びにする */  
+    align-items: center; /* 中の要素を上下中央に並べる */
+    z-index: 999;
+}
+.a{
+    color: aliceblue;
+}
+a:visited{
+    color: rgb(200, 200, 200);
+}
+.menu{
+    color: white;
+}
+h1{
+    margin-right: auto;
+    padding-left: 30px;
+    color: whitesmoke;
+}
+.menu li{
+    display: inline-block;
+    padding: 15px;
+    font-size: 24px;
+    list-style: none;/* リストの・を消す*/
+}
+
+.photo{
+    justify-content: center;
+    position: absolute;
+    display: flex;
+    width: 100%;
+    top: 0px;
+    left: 0;
+    height: 830px;
+    background-color: rgb(227, 227, 227);
+    overflow: hidden;
+}
+.slide1,.slide2,.slide3{
+    display: block;
+    position: absolute;
+    text-align: center;
+    animation: anime 12s 0s ease infinite;
+    background: center center no-repeat;
+    top: 52px;
+    z-index: 1;
+    opacity: 0;
+}
+.cap{
+    color: rgb(244, 244, 244);
+    font-weight: bold;
+    -webkit-text-stroke: 0.9px rgb(13, 13, 13);
+    text-decoration: none;
+}
+.slide2{
+    animation-delay: 4s;
+}
+.slide3{
+    animation-delay: 8s;
+}
+.cap1 img,.cap2 img,.cap3 img{
+    width: 75%;
+    height: auto;
+    margin-top: 0;
+}
+.slide1-2,.slide2-2,.slide3-2{
+    display: block;
+    position: absolute;
+    text-align: center;
+    animation: anime2 12s 0s ease infinite;
+    background: center center no-repeat;
+    top: 52px;
+    left: -10px;
+    z-index: 0;
+}
+.slide1-2 img,.slide2-2 img,.slide3-2 img{
+    width: 103%;
+    height: auto;
+    margin-top: 0;
+    opacity: 1;
+    filter: blur(8px);
+}
+.slide2-2{
+    animation-delay: 4s;
+}
+.slide3-2{
+    animation-delay: 8s;
+}
+@keyframes anime {
+    0% {
+        opacity: 1;
+    }
+    33%{
+        opacity: 1;
+    }
+    40% {
+        opacity: 0;
+        z-index: 10;
+}
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes anime2 {
+    0% {
+        opacity: 1;
+    }
+    33%{
+        opacity: 1;
+    }
+    40% {
+        opacity: 0;
+        z-index: 9;
+}
+    100% {
+        opacity: 0;
+    }
+}
+.About{
+    justify-content: center;
+    position: absolute;
+    display: flex;
+    top: 830px;
+    left: 0;
+    height: 700px;
+    width: 100%;
+    background-color:rgb(32, 44, 60);
+}
+h2{
+    display: block;
+    position: absolute;
+    top: 1%;
+    left: 3%;
+    font-size: 40px;
+    color:darkgray;
+}
+.Profile{
+    margin-top: 100PX;
+    display: block;
+    margin-left: 0%;
+}
+.icon img{
+    display: block;
+    position: absolute;
+    width: 38%;
+    height: auto;
+    right: 5%;
+    top: 10%;
+    border-radius: 50%;
+    
+}
+.name{
+    font-size: 32px;
+    display: block;
+    position: absolute;
+    top: 30%;
+    left: 6%;
+    color:darkgray;
+}
+.raireki{
+    font-size: 18px;
+    display: block;
+    position: absolute;
+    top: 40%;
+    left: 6%;
+    color:darkgray;
+}
+.able{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    top: 1480px;
+    left: 0;
+    height: 450px;
+    background-color: rgb(32, 44, 60);
+    overflow: hidden;
+    z-index: 0;
+}
+.can{
+    font-size: 28px;
+    display: flex;
+    position: absolute;
+    top: 2%;
+    left: 12.5%;
+    color:darkgray;
+    white-space: nowrap;
+    width: 50%;
+}
+
+.can3{
+    font-size: 28px;
+    display: flex;
+    position: absolute;
+    width: 50%;
+    top: auto;
+    color:darkgray;
+    white-space: nowrap;
+    left: 75%;
+}
+footer{
+    height: 70px;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    left: 0;
+    background-color: rgb(18, 18, 18);
+    z-index: 99;
+    text-align: center;
+}
+.copy{
+    color: rgb(200, 200, 200);
+    font-size: 24px;
+    margin-top: 12px;
+}
